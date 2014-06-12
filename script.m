@@ -2,4 +2,4 @@ clc,clear;
 trainingDataPathList = getNodes(uigetdir('.','trainingDataPathList'));
 [filename, pathname]  = uigetfile('.','testImgPath');
 testImgPath = [pathname filename];
-facerecog(trainingDataPathList,testImgPath);
+[recognized_img,projectimg, eigenfaces,m] = facerecog(trainingDataPathList,testImgPath);
